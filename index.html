@@ -1,12 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CV Sedov Dmitrii</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
+
+<header>
+    <nav class="menu_bar">  
+            <ul class="menu_style_ul">
+                <li class="menu_style_li"><a class="new_link" href="#top_page">Basic information</a></li>
+                <li class="menu_style_li"><a class="new_link" href="#description">Description</a></li>
+                <li class="menu_style_li"><a class="new_link" href="#skills">My skills</a></li>
+                <li class="menu_style_li"><a class="new_link" href="#education">Education</a></li>
+                <li class="menu_style_li"><a class="new_link" href="#mycode">Sample code</a></li>
+                <li class="menu_style_li"><a class="new_link" href="#mytasks">Сompleted tasks</a></li>
+                <li class="menu_style_li"><a class="new_link" href="#foot_links">Links</a></li>
+            </ul>
+    </nav>
+</header>
+
+<main>
+
+    <div class="fix_avatar">
+        <img src="pictures/ava.jpg" alt="Avatar" width="300" height="374">
+    </div>
+
+    <section class="white_blok">
+        <h1 id="top_page">Basic information</h1>
+        <p class="normal_text"><b>My name is:</b> Dmitrii Sedov</p>
+        <p class="normal_text"><b>My date of birth: </b> 27/08/1986</p>
+        <p class="normal_text"><b>My country: </b> Russia, Rostov-on-Don</p>
+        <p class="normal_text"><b>My tel.: </b> +7-961-307-6969</p>
+        <p class="normal_text"><b>Discord: </b> Doophy (@doophy86)</p>
+    </section>
+
+
+
+    <section class="white_blok_content">
+        <h1 id="description">Description</h1>
+        <p class="normal_text"> I used to do programming, then worked as the head of the IT department for a long time.<br> Now I have decided
+        to resume such a process as programming, because I want to work at home. 
+        <br>I chose js front/end because it is very popular and allows me to develop many interesting applications.
+        </p>
+    </section>
+
+    <section class="white_blok_content">
+        <h1 id="skills">My skills</h1>
+        <p class="normal_text"> I was already familiar with JS earlier, but superficially. I wrote CRM for a real estate agency using:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>JS used for
+                <ul>
+                   <li>jquery</li>
+                   <li>ajax functions</li>
+                </ul>
+            </li>
+            <li>Delphi</li>
+            <li>Pascal</li>
+         </ul>
+    </section>
+
+    <section class="white_blok_content">
+         <h1 id="education">Education</h1>
+         <p class="normal_text"> I have 2 educations:</p>    
+         <ol>
+             <li>secondary specialized (computer and machine software)</li>
+             <li>higher education (applied computer science in economics)</li>
+        </ol>
+        <p class="normal_text">English - Reading. Now I'm pulling up hard.</p>
+    </section>
+
+    <section class="white_blok_content">
+        <h1 id="mycode">Part of my code</h1>
+         <pre>
+
+            &lt;script type="text/javascript"&gt;
+                function input(obj) { 
+                    if(!/^[\d\.]*$/.test(obj.value)) 
+                    {
+                        obj.value = obj.value.replace(/[^0-9]/g, "");
+                    }
+                }
+                  
+               function validate_my_form ( ) 
+               {
+                   var find_Tel = document.klient;
+                     valid = true;
+                         if (find_Tel.tel.value == "")
+                         {
+                             alert ( "Введите номер" );
+                             valid = false;
+                             return valid;
+                         } 
+                        if (find_Tel.tel2.value == "")
+                         {
+                            alert ( "Введите номер" );
+                            valid = false;
+                            return valid;
+                         }
+   
+                        return valid;
+               }
+               &lt;/script&gt;
+         </pre>
+
+    </section>
+    <section class="white_blok_content"> 
+        <h1 id="mytasks">Сompleted tasks</h1>
+        <ul>
+            <li style="list-style: none;"><a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/git-markdown.md">CV#1. Markdown & Git</a></li>
+            <li style="list-style: none;"><a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/html-css-git.md">CV#2. HTML, CSS & Git Basics</a></li>
+        </ul>
+
+    </section>
+</main>
+
+<footer>
+    <section class="white_blok_content">
+        <h2 id="foot_links">Other links</h2>
+        <img src="https://rs.school/images/rs_school_js.svg" alt="RS Logo" height="33" width="90">
+        <a class="new_link_footbar" href="https://rs.school/js/">Link for my school</a>
+        <img src="pictures/github.png" alt="github logo" height="32" width="32">
+        <a class="new_link_footbar" href="https://Doophy86.github.io/rsschool-cv/">Link for my project on Github</a>
+        <p class="date_comlete">14.06.2022 18:40</p>
+   </section>
+    
+</footer>
 </body>
 </html>
